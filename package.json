@@ -1,0 +1,56 @@
+{
+  "_from": "react-native-chip",
+  "_id": "react-native-chip@2.1.8",
+  "_inBundle": false,
+  "_integrity": "sha512-z+5+sI+e9Ed18eOSP2pURGH8FanrOybsV7y0v7rfVPabNK5FPe4+HgKic/snnaQCnhgEqWynxaJPVFGfJoPS5A==",
+  "_location": "/react-native-chip",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-chip",
+    "name": "react-native-chip",
+    "escapedName": "react-native-chip",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-chip/-/react-native-chip-2.1.8.tgz",
+  "_shasum": "75e1eb54a9b6b1417bfe747115e4460d9fb08b50",
+  "_spec": "react-native-chip",
+  "_where": "/media/alexis/Blade HDD/Documents/Bananacode/NPM",
+  "author": {
+    "name": "Alexis Valenciano"
+  },
+  "bugs": {
+    "url": "https://github.com/allexxis/react-native-chip/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "React navite component to represent a list with different functionalities on  a chip view base on react-native-chips",
+  "homepage": "https://github.com/allexxis/react-native-chip#readme",
+  "keywords": [
+    "react-native-chip",
+    "react-native-chips",
+    "react-native",
+    "removable-chips",
+    "seletable-chips",
+    "chips",
+    "array",
+    "tags",
+    "select",
+    "delete"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "react-native-chip",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allexxis/react-native-chip.git"
+  },
+  "version": "2.1.8"
+}
