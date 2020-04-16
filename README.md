@@ -52,4 +52,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## License
-react-native-chips is [MIT][LICENSE] License @ Alexis Valenciano 
+react-native-chips is [LICENSE](LICENSE.MD) @ Alexis Valenciano 
