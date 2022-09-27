@@ -2,7 +2,7 @@
  * @author Alexis Valenciano <gabr.933@gmail.com>
  */
 import React from 'react';
-import { View, StyleSheet, Alert } from 'react-native';
+import { View, Alert } from 'react-native';
 import Chips from './chips';
 
 class SelectableChips extends React.Component {
@@ -21,32 +21,8 @@ class SelectableChips extends React.Component {
             
         });
     }
-    selectChip=(value)=>{
-        
-        if(this.isSelected(value)){
-            let array = [...this.state.selectedChips]
-            let result = array.filter((text)=>{
-                return text!=value
-            })
-            this.setState({
-                selectedChips:result
-            }, () => this.props.onChangeChips && this.props.onChangeChips(this.state.selectedChips));
-            if (this.props.alertRequired) Alert.alert('', 'Unselected')
-        }else{
-            let array = [...this.state.selectedChips]
-            array.unshift(value)  
-            this.setState({
-                selectedChips:array
-            }, () => this.props.onChangeChips && this.props.onChangeChips(this.state.selectedChips));          
-            if (this.props.alertRequired) Alert.alert('', 'Selected')
-        }
-        
-        
-        
-    }
-    isSelected=(value)=>{
-        let array = [...this.state.selectedChips]
-        return array.includes(value)
+    selectChip=()=>{
+        if (this.props.alertRequired) Alert.alert('', 'Selected')
     }
     render() {
         
@@ -60,9 +36,7 @@ class SelectableChips extends React.Component {
                 valueStyle={valueStyle}
                 valueStyleSelected={valueStyleSelected}
                 chipStyleSelected={chipStyleSelected}
-                onPress={() => this.selectChip(item)} 
-                type='selectable'
-                selected={this.isSelected(item)}/>
+                type=''/>
         ));
         return (
             <View>

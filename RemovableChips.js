@@ -59,6 +59,7 @@ class RemovableChips extends React.Component {
         }
         const chips = this.state.chips.map((item, index) => (
             <Chips
+                isSelectable={this.props.isSelectable}
                 key={index}
                 value={item}
                 chipStyle={chipStyle}
