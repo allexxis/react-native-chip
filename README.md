@@ -39,6 +39,13 @@ chipStyle            | Changing the style of chip elements                    | 
 valueStyle            | Changing the style of the value inside the chip                    | Style Object    | -
 valueStyleSelected            | Changing the style of the value inside the chip when is selected                    | Style Object    | -
 chipStyleSelected            | Changing the style of chip elements when is selected                    | Style Object    | -
+## Properties BasicChip
+ name                 | description                                 | type     | default
+:-------------------- |:------------------------------------------- |:-------- |:------------------
+initialChips            | Initial Chips to be present                     | Array    | -
+alertRequired            | To trigger alert on adding and removing chips                     | Boolean    | false
+chipStyle            | Changing the style of chip elements                    | Style Object    | -
+valueStyle            | Changing the style of the value inside the chip                    | Style Object    | -
 
 ## Sample
 
