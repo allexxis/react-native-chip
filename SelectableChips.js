@@ -9,16 +9,16 @@ class SelectableChips extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedChips:[],
+            selectedChips: (props.initialSelectedChips) ? props.initialSelectedChips : [],
             isFocused: false,
             chips: (props.initialChips) ? props.initialChips : []
         }
     }
     
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         this.setState({
             chips: (nextProps.initialChips) ? nextProps.initialChips : [],
-            
+            selectedChips: (nextProps.initialSelectedChips) ? nextProps.initialSelectedChips : [],
         });
     }
     selectChip=(value)=>{

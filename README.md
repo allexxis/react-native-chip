@@ -33,6 +33,7 @@ chipCloseStyle            | Changing the x close of the chip                    
  name                 | description                                 | type     | default
 :-------------------- |:------------------------------------------- |:-------- |:------------------
 initialChips            | Initial Chips to be present                     | Array    | -
+initialSelectedChips    | Initial Selected Chips to be present            | Array    | -
 onChangeChips            | To get the value of selected chips in array                     | Function    | -
 alertRequired            | To trigger alert on adding and removing chips                     | Boolean    | false
 chipStyle            | Changing the style of chip elements                    | Style Object    | -
