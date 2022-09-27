@@ -21,14 +21,23 @@ const Chips = (props) => {
             )
         }       
     }
-    return (
+
+    if (type=='selectable') {
         <TouchableOpacity  onPress={onPress}>
             <View style={selected?[{flexDirection:'row'},returnStyles().chipSelected, chipStyle,chipStyleSelected]:[{flexDirection:'row'},returnStyles().chip, chipStyle]}>
                 <Text style={selected?[{ paddingHorizontal: 5 },returnStyles().valueStyleSelected,valueStyle,valueStyleSelected]:[{ paddingHorizontal: 5 },returnStyles().valueStyle,valueStyle]}>{value}</Text>
                 {returnRemovable()}
             </View>
         </TouchableOpacity>
-    )
+    } else {
+        return ( //Basic
+            <View style={selected?[{flexDirection:'row'},returnStyles().chipSelected, chipStyle,chipStyleSelected]:[{flexDirection:'row'},returnStyles().chip, chipStyle]}>
+                <Text style={selected?[{ paddingHorizontal: 5 },returnStyles().valueStyleSelected,valueStyle,valueStyleSelected]:[{ paddingHorizontal: 5 },returnStyles().valueStyle,valueStyle]}>{value}</Text>
+                {returnRemovable()}
+            </View>
+        )
+    }
+
 }
 
 const removableStyles = StyleSheet.create({
