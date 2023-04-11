@@ -23,16 +23,16 @@ const Chips = (props) => {
     }
 
     if (type=='selectable') {
-        <TouchableOpacity  onPress={onPress}>
+        return (<TouchableOpacity  onPress={onPress}>
             <View style={selected?[{flexDirection:'row'},returnStyles().chipSelected, chipStyle,chipStyleSelected]:[{flexDirection:'row'},returnStyles().chip, chipStyle]}>
                 <Text style={selected?[{ paddingHorizontal: 5 },returnStyles().valueStyleSelected,valueStyle,valueStyleSelected]:[{ paddingHorizontal: 5 },returnStyles().valueStyle,valueStyle]}>{value}</Text>
                 {returnRemovable()}
             </View>
-        </TouchableOpacity>
+        </TouchableOpacity>)
     } else {
         return ( //Basic
-            <View style={selected?[{flexDirection:'row'},returnStyles().chipSelected, chipStyle,chipStyleSelected]:[{flexDirection:'row'},returnStyles().chip, chipStyle]}>
-                <Text style={selected?[{ paddingHorizontal: 5 },returnStyles().valueStyleSelected,valueStyle,valueStyleSelected]:[{ paddingHorizontal: 5 },returnStyles().valueStyle,valueStyle]}>{value}</Text>
+            <View style={[{flexDirection:'row'},returnStyles().chip, chipStyle]}>
+                <Text style={[{ paddingHorizontal: 5 },returnStyles().valueStyle,valueStyle]}>{value}</Text>
                 {returnRemovable()}
             </View>
         )

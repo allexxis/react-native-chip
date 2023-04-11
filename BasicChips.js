@@ -5,7 +5,7 @@ import React from 'react';
 import { View, Alert } from 'react-native';
 import Chips from './chips';
 
-class SelectableChips extends React.Component {
+class BasicChips extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -26,7 +26,7 @@ class SelectableChips extends React.Component {
     }
     render() {
         
-        const { chipStyle,valueStyle,valueStyleSelected,chipStyleSelected} = this.props;
+        const { chipStyle,valueStyle} = this.props;
         
         const chips = this.state.chips.map((item,index) => (
             <Chips
@@ -34,8 +34,6 @@ class SelectableChips extends React.Component {
                 value={item}
                 chipStyle={chipStyle}
                 valueStyle={valueStyle}
-                valueStyleSelected={valueStyleSelected}
-                chipStyleSelected={chipStyleSelected}
                 type=''/>
         ));
         return (
@@ -48,4 +46,4 @@ class SelectableChips extends React.Component {
     }
 }
 
-export default SelectableChips;
+export default BasicChips;
